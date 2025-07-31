@@ -16,14 +16,14 @@ public:
         //  }
         int i = 0;
         int j = 0;
-        int k = 0;
+        //int k = 0;
         while (i < nums.size()) {
             if (nums[i] != val) {
-                ++k;
+                //++k;
                 nums[j++] = nums[i];
             }
             i++;
         }
-        return k;
+        return j;
     }
 };
