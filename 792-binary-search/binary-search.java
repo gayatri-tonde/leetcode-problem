@@ -15,7 +15,7 @@ class Solution {
                 end = n - 1;
             }
 
-            if(target > nums[n]){
+            else{
                 start = n + 1;
             }
         }
