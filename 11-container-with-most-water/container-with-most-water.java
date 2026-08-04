@@ -4,13 +4,15 @@ class Solution {
         int end = height.length - 1;
         int max = 0;
         while (start < end) {
+            int count;
             if (height[start] < height[end]) {
-                max = Math.max(max, height[start] * (end - start));
+                count = height[start] * (end - start);
                 start++;
             } else {
-                max = Math.max(max, height[end] * (end - start));
+                count = height[end] * (end - start);
                 end--;
             }
+            max = Math.max(max, count);
         }
         return max;
     }
